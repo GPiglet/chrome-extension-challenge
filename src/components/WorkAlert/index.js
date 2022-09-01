@@ -1,14 +1,14 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 
-import { Box, Button, Container, Grid, Stack, TextField, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, IconButton, Stack, TextField, Typography } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
 
 const WorkAlert = () => {
 
     return(
         <Container>
-            <Box width={600} bgcolor="black" mx="auto" >
+            <Box maxWidth={600} width='100%' bgcolor="black" mx="auto" >
                 <Box height={90} bgcolor="#282828" alignItems='center' display='flex' px='32px'>
                     <Stack direction='row' width='100%' alignItems='center' spacing={3}>
                         <Typography color='white' fontSize={20} lineHeight='26px' fontWeight='bold' flexGrow={1}>
@@ -25,8 +25,10 @@ const WorkAlert = () => {
                     <Grid item xs={12} pt={4}>
                         <Grid container spacing={2}>
                             <Grid item xs={12}>
-                                <Grid container bgcolor='#282828' borderRadius='4px' p={2} alignItems='center'>
-                                    <DeleteIcon sx={{color:"#999999", pr:2}} />
+                                <Grid container bgcolor='#282828' borderRadius='4px' p={2} pl={1} alignItems='center'>
+                                    <IconButton aria-label="delete">
+                                        <DeleteIcon sx={{color:"#999999",}} />
+                                    </IconButton>
                                     <Stack flexGrow={1}>
                                         <Typography color='#999999' fontSize={14}>Keyword</Typography>
                                         <Typography color='#FFFFFF' fontSize={16}>Mobile App Development</Typography>
@@ -35,8 +37,10 @@ const WorkAlert = () => {
                                 </Grid>
                             </Grid>
                             <Grid item xs={12}>
-                                <Grid container bgcolor='#282828' borderRadius='4px' p={2} alignItems='center'>
-                                    <DeleteIcon sx={{color:"#999999", pr:2}} />
+                                <Grid container bgcolor='#282828' borderRadius='4px' p={2} pl={1} alignItems='center'>
+                                    <IconButton aria-label="delete">
+                                        <DeleteIcon sx={{color:"#999999",}} />
+                                    </IconButton>
                                     <Stack flexGrow={1}>
                                         <Typography color='#999999' fontSize={14}>Keyword</Typography>
                                         <Typography color='#FFFFFF' fontSize={16}>Mobile App Development</Typography>
@@ -45,8 +49,10 @@ const WorkAlert = () => {
                                 </Grid>
                             </Grid>
                             <Grid item xs={12}>
-                                <Grid container bgcolor='#282828' borderRadius='4px' p={2} alignItems='center'>
-                                    <DeleteIcon sx={{color:"#999999", pr:2}} />
+                                <Grid container bgcolor='#282828' borderRadius='4px' p={2} pl={1} alignItems='center'>
+                                    <IconButton aria-label="delete">
+                                        <DeleteIcon sx={{color:"#999999",}} />
+                                    </IconButton>
                                     <Stack flexGrow={1}>
                                         <Typography color='#999999' fontSize={14}>Keyword</Typography>
                                         <Typography color='#FFFFFF' fontSize={16}>Mobile App Development</Typography>
@@ -55,8 +61,10 @@ const WorkAlert = () => {
                                 </Grid>
                             </Grid>
                             <Grid item xs={12}>
-                                <Grid container bgcolor='#282828' borderRadius='4px' p={2} alignItems='center'>
-                                    <DeleteIcon sx={{color:"#999999", pr:2}} />
+                                <Grid container bgcolor='#282828' borderRadius='4px' p={2} pl={1} alignItems='center'>
+                                    <IconButton aria-label="delete">
+                                        <DeleteIcon sx={{color:"#999999",}} />
+                                    </IconButton>
                                     <Stack flexGrow={1}>
                                         <Typography color='#999999' fontSize={14}>Keyword</Typography>
                                         <Typography color='#FFFFFF' fontSize={16}>Mobile App Development</Typography>
@@ -75,8 +83,10 @@ const WorkAlert = () => {
                                                 <TextField id="outlined-basic" placeholder="UpWork RSS Link" variant="outlined" sx={{width:'100%'}} />
                                             </Grid>
                                             <Grid item xs={12}>
-                                                <Grid container bgcolor='black' borderRadius='4px' py={2} >
-                                                    <Typography color='white' textAlign='center' width='100%'>ADD NEW KEYWORD</Typography>
+                                                <Grid container borderRadius='4px' >
+                                                    <Button sx={{width:'100%', bgcolor:'black', borderRadius:'4px', py:2}} >
+                                                        <Typography color='white' textAlign='center' width='100%'>ADD NEW KEYWORD</Typography>
+                                                    </Button>
                                                 </Grid>
                                             </Grid>
                                         </Grid>
@@ -86,7 +96,7 @@ const WorkAlert = () => {
                         </Grid>
                     </Grid>
                 </Box>
-                <Box bgcolor='#282828' p={4}>
+                <Box bgcolor='#282828' p={4} mt='89px'>
                     <Grid item xs={12}>
                         <Grid container p='20px' sx={{background:'transparent radial-gradient(closest-side at 50% 50%, #1890FF 0%, #002766 100%) 0% 0% no-repeat padding-box', border:'1px solid #FFFFFF66', opacity:1}} borderRadius='10px' height={121} alignItems='center'>
                             <Box width={91} position='relative' pr={2}>
@@ -96,8 +106,11 @@ const WorkAlert = () => {
                                 </Box>
                             </Box>
                             <Typography fontSize={20} lineHeight="32px" fontWeight="medium" color='white' flexGrow={1} >Connect ScopeBuilder</Typography>
+                            
                             <Box bgcolor='#002766' borderRadius='50%' width={57} height={57} display='flex' alignItems='center' justifyContent='center' m='12px'>
+                            <IconButton aria-label="delete">
                                 <img src="arrow-right.svg" alt="" />
+                            </IconButton>
                             </Box>
                         </Grid>
                     </Grid>
