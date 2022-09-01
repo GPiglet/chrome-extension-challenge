@@ -99,19 +99,24 @@ const WorkAlert = () => {
                 <Box bgcolor='#282828' p={4} mt='89px'>
                     <Grid item xs={12}>
                         <Grid container p='20px' sx={{background:'transparent radial-gradient(closest-side at 50% 50%, #1890FF 0%, #002766 100%) 0% 0% no-repeat padding-box', border:'1px solid #FFFFFF66', opacity:1}} borderRadius='10px' height={121} alignItems='center'>
-                            <Box flexGrow={{xs:'1', sm:'none'}} width={91} position='relative' pr={2}>
-                                <Box width={81} height={81} borderRadius='50%' bgcolor='white' sx={{opacity:0.4}}>
+                            <Grid item xs='auto' flexGrow={1}>
+                                <Box width={91} position='relative' pr={2}>
+                                    <Box width={81} height={81} borderRadius='50%' bgcolor='white' sx={{opacity:0.4}}>
+                                    </Box>
+                                    <Box width={81} height={81} borderRadius='50%' bgcolor='white' position='absolute' left='10px' top='0px'>
+                                    </Box>
                                 </Box>
-                                <Box width={81} height={81} borderRadius='50%' bgcolor='white' position='absolute' left='10px' top='0px'>
+                            </Grid>
+                            <Grid item xs display={{xs:'none', '2xs':'block'}}>
+                                <Typography fontSize={20} lineHeight="32px" fontWeight="medium" color='white'>Connect ScopeBuilder</Typography>
+                            </Grid>
+                            <Grid item xs={{xs:'','2xs':'auto'}}>
+                                <Box bgcolor='#002766' borderRadius='50%' width={57} height={57} display='flex' alignItems='center' justifyContent='center' m='12px'>
+                                <IconButton aria-label="delete">
+                                    <img src="arrow-right.svg" alt="" />
+                                </IconButton>
                                 </Box>
-                            </Box>
-                            <Typography display={{xs:'none', sm:'block'}} fontSize={20} lineHeight="32px" fontWeight="medium" color='white' flexGrow={{xs:'none', sm:'1'}} >Connect ScopeBuilder</Typography>
-                            
-                            <Box bgcolor='#002766' borderRadius='50%' width={57} height={57} display='flex' alignItems='center' justifyContent='center' m='12px'>
-                            <IconButton aria-label="delete">
-                                <img src="arrow-right.svg" alt="" />
-                            </IconButton>
-                            </Box>
+                            </Grid>
                         </Grid>
                     </Grid>
 
