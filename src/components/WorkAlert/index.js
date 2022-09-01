@@ -96,7 +96,7 @@ const WorkAlert = () => {
                         </Grid>
                     </Grid>
                 </Box>
-                <Box bgcolor='#282828' p={4} mt='89px'>
+                <Box bgcolor='#282828' p={4} mt='75px'>
                     <Grid item xs={12}>
                         <Grid container p='20px' sx={{background:'transparent radial-gradient(closest-side at 50% 50%, #1890FF 0%, #002766 100%) 0% 0% no-repeat padding-box', border:'1px solid #FFFFFF66', opacity:1}} borderRadius='10px' height={121} alignItems='center'>
                             <Grid item xs='auto' flexGrow={1}>
